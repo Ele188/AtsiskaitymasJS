@@ -21,8 +21,12 @@ const fetchCars = async () => {
 
 
     cars.forEach((car) => {
-      const carCard = document.createElement("div");
+      const carCard = document.createElement("a");
+      carCard.href = `./about-car.html`;
       carCard.classList.add("car-card");
+      carCard.addEventListener("click", ()=>{
+        localStorage.setItem("carId", car.id);
+      } )
 
       const image = document.createElement("img");
       image.src = car.image_url;
@@ -36,7 +40,7 @@ const fetchCars = async () => {
       bodyType.innerHTML = car.body_type;
 
       const price = document.createElement("h4");
-      price.innerHTML = car.price + "€";
+      price.innerHTML = car.price + " €";
 
       carCard.append(image);
       carCard.append(carBrand);
@@ -45,7 +49,7 @@ const fetchCars = async () => {
       cardWrapper.append(carCard);
 
       carCard.addEventListener('click', () => {
-        console.log(car.brand, car.price);
+        console.log(car);
       })
       
       })

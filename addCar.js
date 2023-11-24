@@ -1,5 +1,5 @@
-const button = document.getElementById("add_car_button");
-const burger_button = document.getElementById("burger-button")
+const button = document.getElementById("add-new-car");
+const burger_button = document.getElementById("burger-button");
 
 const brand = document.getElementById("brand");
 const model = document.getElementById("model");
