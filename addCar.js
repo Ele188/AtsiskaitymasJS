@@ -1,4 +1,5 @@
-const button = document.getElementById("add-new-car");
+const button = document.getElementById("add-button");
+const postAdBtn = document.getElementById("post-ad-btn")
 const burger_button = document.getElementById("burger-button");
 
 const brand = document.getElementById("brand");
@@ -75,5 +76,8 @@ burger_button.addEventListener('click', ()=> {
     navbar.classList.toggle("navbar-active");
 });
 
+postAdBtn.addEventListener('click', () => {
+    window.location.replace("./add-car.html");
+  });
 
     

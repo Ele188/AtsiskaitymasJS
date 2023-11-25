@@ -1,5 +1,6 @@
-const button = document.getElementById("add-new-car");
+const postAdBtn = document.getElementById("post-ad-btn");
 const burger_button = document.getElementById("burger-button");
+const deleteBtn = document.getElementById("delete-btn");
 
 const carId = localStorage.getItem("carId");
 
@@ -19,6 +20,7 @@ const contactNumber = document.getElementById("contact-number");
 const country = document.getElementById("country");
 const city = document.getElementById("city");
 const adLink = document.getElementById("ad-link");
+
 
   console.log(carId);
 
@@ -43,21 +45,31 @@ const adLink = document.getElementById("ad-link");
     city.textContent = "City: " + car.city;
     adLink.textContent = " Follow the link for more information ";
     adLink.href = car.ad_link;
-
-
-
-
-
   };
 
-
-  button.addEventListener('click', () => {
+  postAdBtn.addEventListener('click', () => {
     window.location.replace("./add-car.html");
   });
   
   burger_button.addEventListener('click', ()=> {
-      
     navbar.classList.toggle("navbar-active");
   });
 
+
   carDetails();
+
+
+  deleteBtn.addEventListener("click", async () => {
+      const response = await fetch(
+        `https://655cf28725b76d9884fe31d6.mockapi.io/cars/${carId}`,
+        {method: "DELETE"}
+        );
+
+        const result = await response.json();
+
+        console.log(result);
+
+        setTimeout(() => {
+            window.location.replace('./index.html')
+        }, 3000);
+  });

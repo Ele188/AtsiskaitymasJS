@@ -1,8 +1,8 @@
 const cardWrapper = document.getElementById("card-wrapper");
-const button = document.getElementById("add-new-car");
+const postAdBtn = document.getElementById("post-ad-btn");
 const burger_button = document.getElementById("burger-button");
 
-button.addEventListener('click', () => {
+postAdBtn.addEventListener("click", () => {
   window.location.replace("./add-car.html");
 });
 
