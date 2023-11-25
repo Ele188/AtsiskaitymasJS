@@ -193,6 +193,14 @@ header {
 .success_message {
   margin-top: 30px;
   color: rgb(29, 215, 20);
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.delete_message {
+  margin-top: 30px;
+  color: #c41b1b;
   font-size: larger;
   font-weight: bolder;
   text-align: center;

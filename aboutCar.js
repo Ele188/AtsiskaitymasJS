@@ -20,7 +20,7 @@ const contactNumber = document.getElementById("contact-number");
 const country = document.getElementById("country");
 const city = document.getElementById("city");
 const adLink = document.getElementById("ad-link");
-
+const delete_message = document.getElementById("delete_message");
 
   console.log(carId);
 
@@ -67,7 +67,7 @@ const adLink = document.getElementById("ad-link");
 
         const result = await response.json();
 
-        console.log(result);
+        delete_message.textContent = "The ad deleted successfully!";
 
         setTimeout(() => {
             window.location.replace('./index.html')
