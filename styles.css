@@ -182,6 +182,46 @@ header {
   text-align: center;
 }
 
+.car-details-wrapper {
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: rgb(211, 208, 203);
+  border: 2px solid rgb(46, 82, 102);
+  border-radius: 10px;
+  padding-bottom: 50px;
+
+  & img {
+    padding: 0;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  & h2,
+  h3 {
+    padding-left: 10px;
+    margin: 0;
+    line-height: 30px;
+  }
+
+  & h4 {
+    padding-left: 10px;
+    padding-right: 100px;
+    text-wrap: wrap;
+    text-align: justify;
+    margin: 0;
+    line-height: 30px;
+  }
+
+  & a {
+    text-align: end;
+    padding-right: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   header {
     justify-content: space-around;
@@ -205,45 +245,5 @@ header {
       width: 120px;
       font-size: 15px;
     }
-  }
-}
-
-.car-details-wrapper {
-  margin: auto;
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  background-color: rgb(211, 208, 203);
-  border: 2px solid rgb(46, 82, 102);
-  border-radius: 10px;
-  font-size: medium;
-  padding-bottom: 50px;
-
-  & img {
-    padding: 0;
-    object-fit: cover;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  & h2,
-  h3 {
-    padding-left: 10px;
-    margin: 0;
-    line-height: 30px;
-  }
-
-  & h4 {
-    padding-left: 10px;
-    text-align: justify;
-    width: 400px;
-    margin: 0;
-    line-height: 30px;
-  }
-
-  & a {
-    text-align: end;
-    padding-right: 20px;
   }
 }
