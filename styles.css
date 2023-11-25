@@ -190,6 +190,7 @@ header {
   width: 70%;
   background-color: rgb(211, 208, 203);
   border: 2px solid rgb(46, 82, 102);
+  font-size: medium;
   border-radius: 10px;
   padding-bottom: 50px;
 
@@ -211,7 +212,6 @@ header {
     padding-left: 10px;
     padding-right: 50px;
     text-wrap: wrap;
-    text-align: justify;
     margin: 0;
     line-height: 30px;
   }
