@@ -41,7 +41,7 @@ const adLink = document.getElementById("ad-link");
     contactNumber.textContent = "Contact number: " + car.contact_number;
     country.textContent = "Country: " + car.country;
     city.textContent = "City: " + car.city;
-    adLink.textContent = "Link to the ad";
+    adLink.textContent = " Follow the link for more information ";
     adLink.href = car.ad_link;
 
 
