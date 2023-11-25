@@ -210,10 +210,12 @@ header {
 
   & h4 {
     padding-left: 10px;
-    padding-right: 20px;
+    padding-right: 100px;
     text-wrap: wrap;
     margin: 0;
     line-height: 30px;
+    font-size: 25px;
+    font-weight: lighter;
   }
 
   & a {
@@ -245,5 +247,9 @@ header {
       width: 120px;
       font-size: 15px;
     }
+  }
+
+  .car-details-wrapper h4 {
+    padding-right: 20px;
   }
 }
